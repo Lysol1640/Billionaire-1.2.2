@@ -35,6 +35,11 @@ namespace Billionaire_1._2._1
                         Console.WriteLine("Value of question must be one of following: \n" +
                             "500, 1000, 2000, 4000, 16000, 25000, 40000, 80000, 125000, 250000, 500000, 1000000");
                     }
+                    catch(OverflowException)
+                    {
+                        Console.WriteLine("Value of question must be one of following: \n" +
+                            "500, 1000, 2000, 4000, 16000, 25000, 40000, 80000, 125000, 250000, 500000, 1000000");
+                    }
                 }
                     
                 Console.WriteLine("Enter the question: ");

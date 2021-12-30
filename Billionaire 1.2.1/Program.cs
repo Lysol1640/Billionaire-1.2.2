@@ -43,11 +43,10 @@ namespace Billionaire_1._2._1
                 {
                      case "a":                                                                                                                                   //tryb rozgrywki
                         {
+                            Console.Clear();
                             decide = "y";
                             leave = "n";                                                                                //wyzerowanie kluczowych wartosci
-                            Console.Clear();                                                                            //na wypadek gdyby gracz chcial rozpoczac kolejna gre
-                            Console.ReadLine();
-                            indexOfLevel = 0;
+                            indexOfLevel = 0;                                                                           //na wypadek ponownej gry
                             guaranteed = 0;
                             questionNum = 0;
                             List<Question> currentList = new List<Question>();
@@ -56,6 +55,7 @@ namespace Billionaire_1._2._1
                             AddOns.audience = true;
                             AddOns.flip = true;
                             Console.WriteLine(AddOns.Rules());
+                            Console.ReadLine();
 
 
                             do                                                                                                                           //petla kazdego poziomu
@@ -236,6 +236,8 @@ namespace Billionaire_1._2._1
         } 
     } 
 }
+                                                                                                     
+                           
                                    
 
 
