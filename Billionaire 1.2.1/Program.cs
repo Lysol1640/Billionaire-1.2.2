@@ -1,15 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Globalization;
-using CsvHelper;
-using CsvHelper.Configuration;
-using CsvHelper.Configuration.Attributes;
-using Microsoft.VisualBasic.FileIO;
-using System.Threading;
+
 
 namespace Billionaire_1._2._1
 {
@@ -52,14 +43,20 @@ namespace Billionaire_1._2._1
                 {
                      case "a":                                                                                                                                   //tryb rozgrywki
                         {
-                            decide = "y";                                                                                               //wyzerowanie kluczowych wartosci
+                            decide = "y";
+                            leave = "n";                                                                                //wyzerowanie kluczowych wartosci
                             Console.Clear();                                                                            //na wypadek gdyby gracz chcial rozpoczac kolejna gre
-                            Console.WriteLine(AddOns.Rules());
                             Console.ReadLine();
                             indexOfLevel = 0;
                             guaranteed = 0;
                             questionNum = 0;
-                           List<Question> currentList = new List<Question>();
+                            List<Question> currentList = new List<Question>();
+                            wonder = true;
+                            AddOns.fiftyFifty = true;
+                            AddOns.audience = true;
+                            AddOns.flip = true;
+                            Console.WriteLine(AddOns.Rules());
+
 
                             do                                                                                                                           //petla kazdego poziomu
                             {

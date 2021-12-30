@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Globalization;
 using CsvHelper;
 using CsvHelper.Configuration;
-using CsvHelper.Configuration.Attributes;
 using System.IO;
-using Microsoft.VisualBasic.FileIO;
+
 
 namespace Billionaire_1._2._1
 {
