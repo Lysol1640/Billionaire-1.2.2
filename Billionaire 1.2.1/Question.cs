@@ -1,4 +1,5 @@
-﻿using System;
+﻿// nieużywany using
+using System;
 using CsvHelper.Configuration.Attributes;
 
 
@@ -6,6 +7,7 @@ namespace Billionaire_1._2._1
 {
     public class Question
     {
+        // nazwy properek, w samy csv zmieniłbym też text na question
         [Name("text")] public string Text { get; set; }
         [Name("ansa")] public string Ansa { get; set; }
         [Name("ansb")] public string Ansb { get; set; }

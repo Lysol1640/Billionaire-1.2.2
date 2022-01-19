@@ -1,4 +1,5 @@
-﻿using System;
+﻿// nieużywany using
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -18,7 +19,7 @@ namespace Billionaire_1._2._1
             }
                                                                                                         //podzial zaladowanych z pliku csv pytan w zaleznosci od wartosci, 
                                                                                                         //przydzielenie list z pytaniami do slownika
-            
+            // Tu się dzieje jakaś magia którą mozna by załatwić pętlą
             List<Question> list500 = Program.questions.Where(o => o.Value == 500).ToList();
             List < Question > list1000 = Program.questions.Where(o => o.Value == 1000).ToList();
             List < Question > list2000 = Program.questions.Where(o => o.Value == 2000).ToList();

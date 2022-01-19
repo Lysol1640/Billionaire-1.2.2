@@ -158,6 +158,7 @@ namespace Billionaire_1._2._1
                 }
                 string[] temp = { ansa, ansb, ansc, ansd };
 
+                // nie używaj zmiennych jednoliterowych, bo one już kopletnie nic nie mówią, opisz w zmiennej czy jest t wartość dla przyszłych deweloperów
                 int k = 0;
                 foreach (string t in temp)                                                        //sprawdzenie ktore odpowiedzi sa puste(czy zostalo zastosowane 50/50)
                 {                                                                                 //oraz wydobycie indeksu tych odpowiedzi
