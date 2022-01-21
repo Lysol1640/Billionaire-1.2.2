@@ -6,8 +6,16 @@ namespace Billionaire_1._2._1
 {
     class Program
     {
-        public static List<Question> questions = new List<Question>();                                                                   //lista pytan z dostepem dla innych klas
+        // Zmienne mają być opisowe, ta jest wystarczająco więc komentarz z prawej jest zbędny
+        // wgl temat komentarzy to bardzo długa historia:
+        // jw. zmienne mają w nazwie opysywać czym są
+        // metody mają w nazwie opisywać co robią, kod ma być samoopisowy, a komentarze umieszczamy w ostateczności, jeśli musisz dodać komentarz to znaczy że tą metodę da się uprościć/napisać lepiej
+
+        // Publicze zmienne piszemy z dużej litery (konwencja w c#): PublicVariable, prywatne zaczynamy od _: _privateVariable (lub _PrivateVariable - w zależnosci od konwencji przyjętej w firmie)
+        public static List<Question> questions { get; set; } = new List<Question>();                                                                   //lista pytan z dostepem dla innych klas
         public static Dictionary<int, List<Question>> RewardValueQuestions = new Dictionary<int, List<Question>>();                          //podzial pytan w zaleznosci od kwoty
+        // co to jest ff?
+        // w nazwach unikamy skrótów- to jest bardzo ważne, zmienna może się nazywać tak: veryLongNamedVariableForCalculationResults i to powie tobie i każdemu kolejnemu developerowi który przejmie kod dużo więcej niż verLonVarForCalcRes ;)
         public static string[] ff;
 
         public static void Main(string[] args)
@@ -236,6 +244,7 @@ namespace Billionaire_1._2._1
         } 
     } 
 }
+// Za dużo "powietrza" ponizej, usuń- dotyczy wszystkich plików ;)
                                                                                                      
                            
                                    

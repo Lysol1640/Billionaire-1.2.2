@@ -12,6 +12,7 @@ namespace Billionaire_1._2._1
     {
         public static void ReadData()
         {
+            // Tworzysz knfigurację, ale nigdzie jej nie przekazujesz , zobacz przeładowania konstruktora CsvReader()
             var config = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
                 HasHeaderRecord = false
@@ -24,6 +25,8 @@ namespace Billionaire_1._2._1
                 {
                    
                     var records = csvReader.GetRecords<Question>().ToList();
+                    // To jest fatalna praktyka, zmieniasz właściwość niejawnie w innym miejscu
+                    // Ta klasa powinna zwracać listę pytań i to w program.cs byś przipysywał wynik działania tej klasy do zmiennej questions
                     Program.questions = records;
                 }
             }
