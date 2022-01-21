@@ -37,7 +37,7 @@ namespace Billionaire_1._2._1
                 Console.Clear();
                 Console.WriteLine(AddOns.Welcome());
                 choose = Console.ReadLine().ToLower();
-               
+             
 
                 switch (choose)
                 {
